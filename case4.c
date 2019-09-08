@@ -8,6 +8,7 @@
 
 
 char* merge(char* a, char* b, int len) {
+    printf("%d",len);
     char* ret = malloc(len + 1);
     int i = 0, ai = 0, bi=0;
     while (1) {
@@ -18,7 +19,7 @@ char* merge(char* a, char* b, int len) {
         }
 
         if (b[bi] != '\0') {
-           ret[i] = b[ai];
+           ret[i] = b[bi];
            i++;
            bi++;
         }
